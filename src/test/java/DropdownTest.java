@@ -11,7 +11,7 @@ import java.util.List;
 public class DropdownTest {
     WebDriver browser;
     @Test
-    public void validateInput (){
+    public void dropdownTest (){
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         browser = new ChromeDriver();
         browser.get("http://the-internet.herokuapp.com/dropdown");
