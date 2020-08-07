@@ -18,7 +18,7 @@ public class NotificationMessagesTest {
         String text = browser.findElement(By.xpath("//*[@id=\"flash\"]")).getText();
         Assert.assertEquals(text,"Action successful\n" +
                 "×");
-        browser.close();
+        browser.quit();
 
 
 }}
