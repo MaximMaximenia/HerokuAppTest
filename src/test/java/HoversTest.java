@@ -10,7 +10,7 @@ public class HoversTest {
     WebDriver browser;
 
     @Test
-    public void hoversTest() {
+    public void hoverTest() {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         browser = new ChromeDriver();
         browser.get("http://the-internet.herokuapp.com/hovers");
