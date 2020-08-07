@@ -10,7 +10,7 @@ public class CheckboxesTest {
     WebDriver browser;
 
     @Test
-    public void addTest() {
+    public void checkboxTest() {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.setHeadless(true);
