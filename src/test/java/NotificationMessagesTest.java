@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class NotificationMessagesTest {
     WebDriver browser;
     @Test
-    public void validateInput (){
+    public void notificationMessageTest (){
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.setHeadless(true);
