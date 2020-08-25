@@ -14,7 +14,7 @@ public class AddRemoveElements {
     WebDriver browser;
 
     @Test
-    public void addTest() {
+    public void addAndRemoveTest() {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.setHeadless(true);
