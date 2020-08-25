@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class DataTablesTest {
     WebDriver browser;
     @Test
-    public void validateInput (){
+    public void dataTablesTest (){
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.setHeadless(true);
