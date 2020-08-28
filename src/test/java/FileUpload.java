@@ -26,7 +26,7 @@ public class FileUpload {
         driver.findElement(By.id("file-upload")).sendKeys(("C:\\Users\\Admin\\IdeaProjects\\HerokuAppTest\\src\\main\\resources\\Koala.jpg"));
         driver.findElement(By.id("file-submit")).click();
         Assert.assertEquals(driver.findElement(By.id("uploaded-files")).getText().trim(),"Koala.jpg");
-
+driver.close();
 
     }
 }
