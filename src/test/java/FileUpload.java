@@ -9,6 +9,8 @@ import org.testng.annotations.Test;
 
 import javax.swing.*;
 import java.awt.*;
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.ExecutionException;
 
 public class FileUpload {
@@ -17,16 +19,17 @@ public class FileUpload {
 
     @Test
     public void dynamicControlsTest() {
-
+        String path = System.getProperty("user.dir") + "/src/main/resources/Koala.jpg";
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, 20);
         driver.get("http://the-internet.herokuapp.com/upload");
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("file-upload")));
-        driver.findElement(By.id("file-upload")).sendKeys(("C:\\Users\\Admin\\IdeaProjects\\HerokuAppTest\\src\\main\\resources\\Koala.jpg"));
+        driver.findElement(By.id("file-upload")).sendKeys(path);
         driver.findElement(By.id("file-submit")).click();
-        Assert.assertEquals(driver.findElement(By.id("uploaded-files")).getText().trim(),"Koala.jpg");
-driver.close();
+        Assert.assertEquals(driver.findElement(By.id("uploaded-files")).getText().trim(), "Koala.jpg");
+        driver.close();
+
 
     }
 }
