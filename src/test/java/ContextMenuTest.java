@@ -28,7 +28,7 @@ public class ContextMenuTest {
         actions.contextClick(driver.findElement(By.cssSelector("#hot-spot"))).perform();
         String alertMessage = driver.switchTo().alert().getText();
         Assert.assertEquals(alertMessage, "You selected a context menu");
-
+driver.close();
 
     }
 
